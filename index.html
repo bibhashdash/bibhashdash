@@ -1,35 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bibhash Dash</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta name="author" content="Bibhash Dash" />
+    <meta
+      name="description"
+      content="Bibhash Dash is a web developer based in Yorkshire. He is the owner of Nine Block Media, web design business specialising in budget websites."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap" rel="stylesheet" />
-</head>
-
-<body>
-    <div class="background">
-        <div class="headings">
-            <h1>bibhashdash.com</h1>
-            <h2>is under construction</h2>
-            <h3>But in the meanwhile...</h3>
-            <h3>Please feel free to visit my blog <br>
-                <a href="">https://blog.bibhashdash.com/</a></h3>
-
-            <h4>Image courtesy <a href="https://unsplash.com/photos/miBpTBgIaw8?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" target="_blank" rel="noopener noreferrer">unsplash</a
-                > </h4>
-        </h5>
-
-       
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <ul class="navlinks">
+          <li><a href="#welcome">Hello</a></li>
+          <li><a href="#skills">My Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="top-container">
+        <div class="hero-content">
+          <h1 class="heading hero-heading">Hi I'm Bibhash.</h1>
+          <p class="hero-subdeck">I design and code websites.</p>
+          <div class="hero-buttons-container">
+            <button class="btn btn-cta">See my skills</button>
+            <button class="btn btn-contact">Contact Me</button>
+          </div>
         </div>
-    </div>
+        <div class="hero-image-container">
+          <img
+            class="hero-image"
+            src="images/undraw_Internet_on_the_go_re_vben.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <hr />
+      <div id="welcome" class="middle-container">
+        <div class="profile">
+          <h2 class="section-heading">Hello.</h2>
+          <img
+            class="profile-pic"
+            src="images/Bibhash_Dash.jpg"
+            alt="Bibhash profile picture"
+          />
 
-    <!-- <script src="script.js"></script> -->
-</body>
+          <p class="section-text hello-text">
+            My name is Bibhash Dash and I am a web developer. <br />
+            <br />
+            I started my coding journey during the summer of 2020. Since then
+            I've worked on paid and unpaid projects to supplement my skills and
+            am currently running a web design business of my own. During my
+            professional career, I've worked in Sports Journalism, Occupational
+            Health, and the Non-Profit sector. These experiences have shaped my
+            web development path - all my work focuses on the end-user and on
+            ensuring clean code. I value simplicity and usability over flash and
+            complexity. <br /><br />
+            I'd love to have a chat about employment opportunities so please
+            drop me a line.
+          </p>
+          <button class="btn btn-cta">Contact Me</button>
+        </div>
+        <hr id="skills" />
+        <div class="skills">
+          <h2 class="section-heading">My Skills.</h2>
+          <div class="cards-container">
+            <div class="card">
+              <img
+                class="skill-icon"
+                src="images/html-5.png"
+                alt="HTML5 icon"
+              />
+              <h3 class="section-sub-heading">HTML5</h3>
+            </div>
+            <div class="card">
+              <img class="skill-icon" src="images/css.png" alt="CSS3 icon" />
+              <h3 class="section-sub-heading">CSS3</h3>
+            </div>
+            <div class="card">
+              <img
+                class="skill-icon"
+                src="images/javascript.png"
+                alt="javascript icon"
+              />
+              <h3 class="section-sub-heading">JavaScript</h3>
+            </div>
+            <div class="card">
+              <img
+                class="skill-icon"
+                src="images/bootstrap.png"
+                alt="bootstrap icon"
+              />
+              <h3 class="section-sub-heading">Bootstrap</h3>
+            </div>
+            <div class="card">
+              <img class="skill-icon" src="images/react.png" alt="HTML5 icon" />
+              <h3 class="section-sub-heading">React</h3>
+            </div>
+          </div>
+        </div>
+        <hr id="contact" />
+        <div class="contact-me">
+          <h2 class="section-heading">Get In Touch</h2>
 
+          <div class="form-container">
+            <form name="form-contact">
+              <label class="section-text" for="name">Name:</label><br />
+              <input
+                class="form-input"
+                type="text"
+                id="name"
+                name="user_name"
+              /><br />
+
+              <label class="section-text" for="email">Email:</label><br />
+              <input
+                class="form-input"
+                type="email"
+                id="email"
+                name="user_email"
+              /><br />
+
+              <label class="section-text" for="message">Your message:</label
+              ><br />
+              <textarea
+                class="form-input"
+                name="user_message"
+                id="message"
+                cols="30"
+                rows="10"
+              ></textarea>
+
+              <button type="submit" class="btn">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-links">
+          <a
+            class="footer-link"
+            href="https://www.linkedin.com/in/bibhash-dash-57307921/"
+            >LinkedIn</a
+          >
+          <a class="footer-link" href="https://twitter.com/dotdashcodes"
+            >Twitter</a
+          >
+          <a class="footer-link" href="https://www.nineblockmedia.com/"
+            >Nine Block Media</a
+          >
+          <!-- <a class="footer-link" href="https://www.appbrewery.co/"
+            >Iconography</a
+          > -->
+        </div>
+
+        <p class="section-text copyright-text">© 2022 Bibhash Dash</p>
+      </div>
+    </footer>
+  </body>
 </html>
