@@ -1,6 +1,6 @@
-import {IconProps} from "@/icons/TwitterIcon";
+import {CustomIconProps} from "@/icons/TwitterIcon";
 
-export const LinkedInIcon = ({size = 28, color = "#525252"}: IconProps) => {
+export const LinkedInIcon = ({size = 28, color = "#525252"}: CustomIconProps) => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill={color} className="bi bi-linkedin"
          viewBox="0 0 16 16">

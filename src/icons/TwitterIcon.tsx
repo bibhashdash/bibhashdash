@@ -1,9 +1,9 @@
-export interface IconProps {
+export interface CustomIconProps {
   size?: number,
   color?: string,
 }
 
-export const TwitterIcon = ({size = 28, color = "#525252"}: IconProps) => {
+export const TwitterIcon = ({size = 28, color = "#525252"}: CustomIconProps) => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill={color} className="bi bi-twitter"
          viewBox="0 0 16 16">

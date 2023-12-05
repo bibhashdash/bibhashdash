@@ -1,6 +1,5 @@
-import {IconProps} from "@mui/material";
-
-export const EmailIcon = ({size = 28, color = "#525252"}: IconProps) => {
+import {CustomIconProps} from "@/icons/TwitterIcon";
+export const EmailIcon = ({size = 28, color = "#525252"}: CustomIconProps) => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill={color} className="bi bi-envelope-at"
          viewBox="0 0 16 16">
