@@ -1,8 +1,23 @@
 import './globals.css'
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import type {Metadata} from 'next'
+import {Poppins, Playfair_Display} from 'next/font/google'
+import React from "react";
 
-const inter = Inter({ subsets: ['latin'] })
+const poppins = Poppins(
+  {
+    subsets: ['latin'],
+    variable: '--font-poppins',
+    weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  }
+)
+
+const playfair = Playfair_Display(
+  {
+    subsets: ['latin'],
+    variable: '--font-playfair',
+    weight: ["400", "500", "600", "700", "800", "900"],
+  }
+)
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -10,13 +25,15 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({
-  children,
-}: {
+                                     children,
+                                   }: {
   children: React.ReactNode
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <body className={`${poppins.variable} ${playfair.variable} font-sans bg-gray-100`}>
+    {children}
+    </body>
     </html>
   )
 }
