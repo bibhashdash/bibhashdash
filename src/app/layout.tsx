@@ -1,6 +1,6 @@
 import './globals.css'
-import type { Metadata } from 'next'
-import { Poppins, Playfair_Display } from 'next/font/google'
+import type {Metadata} from 'next'
+import {Poppins, Playfair_Display} from 'next/font/google'
 import React from "react";
 
 const poppins = Poppins(
@@ -25,13 +25,15 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({
-  children,
-}: {
+                                     children,
+                                   }: {
   children: React.ReactNode
 }) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} ${playfair.variable} font-sans`}>{children}</body>
+    <body className={`${poppins.variable} ${playfair.variable} font-sans bg-gray-100`}>
+    {children}
+    </body>
     </html>
   )
 }
