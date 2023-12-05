@@ -31,7 +31,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-    <body className={`${poppins.variable} ${playfair.variable} font-sans bg-gray-100`}>
+    <body className={`${poppins.variable} ${playfair.variable} font-sans bg-gray-100 h-screen flex flex-col items-center justify-center`}>
     {children}
     </body>
     </html>
