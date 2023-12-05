@@ -5,14 +5,26 @@ import {TwitterIcon} from "@/icons/TwitterIcon";
 import {EmailIcon} from "@/icons/EmailIcon";
 import {LinkedInIcon} from "@/icons/LinkedInIcon";
 import {useClientDimensions} from "@/utilities/clientDimensions";
+import {useState} from "react";
+import {AboutDrawer} from "@/components/drawers/AboutDrawer";
+import {Drawer} from "@mui/material";
 
 export default function Home() {
   useClientDimensions();
-  const handleButtonClick = () => {
+
+  const [showAboutSection, setShowAboutSection] = useState<boolean>(false);
+
+  const handleWorkButtonClick = () => {
     console.log("hello")
   }
+
+  const drawer = <AboutDrawer isOpen={showAboutSection} onClickClose={() => setShowAboutSection(false)} />
+
   return (
     <main className="flex h-full py-4 flex-col justify-center items-center w-full md:flex-row-reverse md:justify-center md:gap-16">
+      {
+         drawer
+      }
         <div className="h-fit md:flex md:items-center md:h-fit">
           <img
             alt="hero image"
@@ -33,8 +45,8 @@ export default function Home() {
           </h2>
         </header>
         <div className="flex gap-4">
-          <ButtonMain text={"About"} type={"outlined"} onClickButton={handleButtonClick} />
-          <ButtonMain text={"Work"} type={"filled"} onClickButton={handleButtonClick} />
+          <ButtonMain text={"About"} type={"outlined"} onClickButton={() => setShowAboutSection(true)} />
+          <ButtonMain text={"Work"} type={"filled"} onClickButton={handleWorkButtonClick} />
         </div>
 
         <div className="flex justify-evenly w-fit gap-8">
@@ -47,6 +59,8 @@ export default function Home() {
           </a>
         </div>
       </div>
+
+
     </main>
   )
 }
