@@ -7,7 +7,6 @@ import {LinkedInIcon} from "@/icons/LinkedInIcon";
 import {useClientDimensions} from "@/utilities/clientDimensions";
 import {useState} from "react";
 import {AboutDrawer} from "@/components/drawers/AboutDrawer";
-import {Drawer} from "@mui/material";
 
 export default function Home() {
   useClientDimensions();
