@@ -3,6 +3,7 @@ import type {Metadata} from 'next'
 import {Poppins, Playfair_Display} from 'next/font/google'
 import React from "react";
 import {MainHeader} from "@/components/MainHeader";
+import {MainNavigation} from "@/components/MainNavigation";
 
 const poppins = Poppins(
   {
@@ -32,9 +33,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-    <body className={`${poppins.variable} ${playfair.variable} font-sans bg-gray-100 h-screen flex flex-col items-center justify-center px-6`}>
+    <body className={`${poppins.variable} ${playfair.variable} font-sans bg-gray-100 h-screen flex flex-col items-center px-6`}>
     <MainHeader />
-    {children}
+    <div className="grid grid-cols-12 justify-between w-full py-4">
+      <MainNavigation />
+      <div className="w-full col-span-9">
+        {children}
+      </div>
+    </div>
     </body>
     </html>
   )
