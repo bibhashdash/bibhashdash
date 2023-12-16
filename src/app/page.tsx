@@ -33,7 +33,7 @@ export default function Home() {
           </h2>
         </header>
         <div className="flex gap-4">
-          <ButtonMain text={"About"} type={"outlined"} onClickButton={handleButtonClick} />
+          <ButtonMain text={"About Me"} type={"outlined"} onClickButton={handleButtonClick} />
           <ButtonMain text={"Work"} type={"filled"} onClickButton={handleButtonClick} />
         </div>
 
