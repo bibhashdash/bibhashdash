@@ -1,9 +1,11 @@
+'use client';
 import './globals.css'
 import type {Metadata} from 'next'
 import {Poppins, Playfair_Display} from 'next/font/google'
 import React from "react";
 import {MainHeader} from "@/components/MainHeader";
 import {MainNavigation} from "@/components/MainNavigation";
+import {useClientDimensions} from "@/utilities/clientDimensions";
 
 const poppins = Poppins(
   {
@@ -31,6 +33,7 @@ export default function RootLayout({
                                    }: {
   children: React.ReactNode
 }) {
+  useClientDimensions();
   return (
     <html lang="en">
     <body className={`${poppins.variable} ${playfair.variable} font-sans bg-gray-100 h-screen flex flex-col items-center px-2 md:px-20 md:py-8`}>
