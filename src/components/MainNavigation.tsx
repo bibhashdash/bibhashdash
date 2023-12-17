@@ -1,13 +1,35 @@
+'use client';
+
 import FaceIcon from '@mui/icons-material/Face';
 import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
 import AltRouteIcon from '@mui/icons-material/AltRoute';
+import {usePathname} from "next/navigation";
 
 export const MainNavigation = () => {
+
+  const path = usePathname();
+  console.log(path)
+  const activeClass = "text-rose-600";
   return (
     <div className="flex items-center justify-evenly md:flex-col md:justify-start gap-4 w-full h-full md:gap-8">
-      <a className="flex flex-col md:flex-row items-center md:gap-4 w-full"><FaceIcon /> About</a>
-      <a className="flex flex-col md:flex-row items-center md:gap-4 w-full"><WorkHistoryIcon /> Work</a>
-      <a className="flex flex-col md:flex-row items-center md:gap-4 w-full"><AltRouteIcon /> Career</a>
+      <a className={`cursor-pointer text-gray-700 hover:text-gray-400 flex flex-col md:flex-row items-center md:gap-4 md:w-full p-2 rounded-md ${path === '/' && activeClass}`}
+      href={'/'}
+      >
+        <FaceIcon />
+        About
+      </a>
+      <a className={`cursor-pointer text-gray-700 hover:text-gray-400 flex flex-col md:flex-row items-center md:gap-4 md:w-full p-2 rounded-md ${path === '/work' && activeClass}`}
+         href={'/work'}
+      >
+        <WorkHistoryIcon />
+        Work
+      </a>
+      <a className={`cursor-pointer text-gray-700 hover:text-gray-400 flex flex-col md:flex-row items-center md:gap-4 md:w-full p-2 rounded-md ${path === '/career' && activeClass}`}
+         href={'/career'}
+      >
+        <AltRouteIcon />
+        Career
+      </a>
     </div>
   )
 }
