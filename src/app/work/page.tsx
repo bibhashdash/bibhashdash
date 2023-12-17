@@ -35,7 +35,8 @@ export default function Work() {
   useClientDimensions();
   return (
     <div className="flex h-full flex-col pb-12">
-      <p className="w-full text-lg text-center md:text-left font-bold">My Projects</p>
+      <div className="flex flex-col items-center justify-start w-full px-4 md:px-12 md:gap-6 h-full">
+        <p className="w-full text-lg text-center md:text-left font-bold">My Projects</p>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {
             PortfolioData.map(item => (
@@ -43,16 +44,17 @@ export default function Work() {
             ))
           }
         </div>
-      <Modal open={open}
-             onClose={handleClose}
-             aria-labelledby="modal-modal-title"
-             aria-describedby="modal-modal-description">
-        <Box sx={style}>
-          <ContentCardWrapper onClickCloseButton={() => setOpen(!open)} title={modalContent.title} imageSource={modalContent.imageSource}>
-            <PortfolioTextContent workType={modalContent.workType} techStack={modalContent.techStack} description={modalContent.description} />
-          </ContentCardWrapper>
-        </Box>
-      </Modal>
+        <Modal open={open}
+               onClose={handleClose}
+               aria-labelledby="modal-modal-title"
+               aria-describedby="modal-modal-description">
+          <Box sx={style}>
+            <ContentCardWrapper onClickCloseButton={() => setOpen(!open)} title={modalContent.title} imageSource={modalContent.imageSource}>
+              <PortfolioTextContent workType={modalContent.workType} techStack={modalContent.techStack} description={modalContent.description} />
+            </ContentCardWrapper>
+          </Box>
+        </Modal>
+      </div>
     </div>
   )
 }

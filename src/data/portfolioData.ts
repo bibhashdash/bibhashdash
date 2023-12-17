@@ -72,4 +72,12 @@ export const PortfolioData: Array<PortfolioDataModel> = [
     workType: "Website",
     imageSource: "/assets/placeholder.jpg"
   },
+  {
+    id: 9,
+    title: "Phoenix Community Radio",
+    description: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.",
+    techStack: "Next JS, Tailwind, Netlify",
+    workType: "Website",
+    imageSource: "/assets/placeholder.jpg"
+  },
 ]
