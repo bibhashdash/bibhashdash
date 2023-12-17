@@ -35,14 +35,16 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-    <body className={`${poppins.variable} ${playfair.variable} font-sans bg-gray-100 h-screen flex flex-col items-center px-2 md:px-20 md:py-8`}>
-    <MainHeader />
-    <div className="py-2 md:py-8 h-full w-full grid grid-rows-6 md:flex md:flex-row-reverse md:gap-8">
-      <div className="row-span-5 h-full w-full">
-        {children}
-      </div>
-      <div className="row-span-1 h-full md:w-fit">
-        <MainNavigation />
+    <body className={`${poppins.variable} ${playfair.variable} font-sans bg-gray-100 w-full flex justify-center h-screen px-2 md:py-8`}>
+    <div className="w-full max-w-6xl">
+      <MainHeader />
+      <div className="md:flex md:flex-row-reverse w-full">
+        <div className="w-full py-4 md:px-8">
+          {children}
+        </div>
+        <div className="fixed bottom-0 left-0 md:static w-full md:w-fit md:py-8">
+          <MainNavigation />
+        </div>
       </div>
     </div>
     </body>
