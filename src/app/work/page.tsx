@@ -4,7 +4,7 @@ import {ContentCardWrapper} from "@/components/ContentCardWrapper";
 import {PortfolioData, PortfolioDataModel} from "@/data/portfolioData";
 import {PortfolioTextContent} from "@/components/PortfolioTextContent";
 import Modal from '@mui/material/Modal';
-import {useState} from "react";
+import React, {useState} from "react";
 import {PortfolioGalleryCard} from "@/components/PortfolioGalleryCard";
 import Box from '@mui/material/Box';
 
@@ -33,6 +33,7 @@ export default function Work() {
   useClientDimensions();
   return (
     <div className="flex h-full flex-col pb-12">
+      <p className="w-full text-lg text-center md:text-left font-bold">My Projects</p>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {
             PortfolioData.map(item => (
