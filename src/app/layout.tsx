@@ -35,7 +35,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-    <body className={`${poppins.variable} ${playfair.variable} font-sans bg-gray-100 w-full flex justify-center h-screen px-2 md:py-8`}>
+    <body className={`${poppins.variable} ${playfair.variable} font-sans bg-gray-100 w-full flex justify-center px-2 md:py-8`}>
     <div className="w-full max-w-6xl">
       <MainHeader />
       <div className="md:flex md:flex-row-reverse w-full">

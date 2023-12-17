@@ -17,7 +17,9 @@ const style = {
   maxWidth: '900px',
   padding: '4px',
   borderRadius: '10px',
-  height: 'fit-content',
+  overflow: 'auto',
+  height: '100%',
+  maxHeight: '600px',
   backgroundColor: 'background.paper',
   boxShadow: 24,
 };
@@ -46,7 +48,7 @@ export default function Work() {
              aria-labelledby="modal-modal-title"
              aria-describedby="modal-modal-description">
         <Box sx={style}>
-          <ContentCardWrapper title={modalContent.title} imageSource={modalContent.imageSource}>
+          <ContentCardWrapper onClickCloseButton={() => setOpen(!open)} title={modalContent.title} imageSource={modalContent.imageSource}>
             <PortfolioTextContent workType={modalContent.workType} techStack={modalContent.techStack} description={modalContent.description} />
           </ContentCardWrapper>
         </Box>
