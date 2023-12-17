@@ -1,25 +1,55 @@
 'use client';
 import {useClientDimensions} from "@/utilities/clientDimensions";
-import {PageWrapper} from "@/components/PageWrapper";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel';
 import {ContentCardWrapper} from "@/components/ContentCardWrapper";
-import {PortfolioData} from "@/data/portfolioData";
+import {PortfolioData, PortfolioDataModel} from "@/data/portfolioData";
 import {PortfolioTextContent} from "@/components/PortfolioTextContent";
-export default function Work() {
+import Modal from '@mui/material/Modal';
+import {useState} from "react";
+import {PortfolioGalleryCard} from "@/components/PortfolioGalleryCard";
+import Box from '@mui/material/Box';
 
+const style = {
+  position: 'absolute' as 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: '100%',
+  maxWidth: '900px',
+  padding: '4px',
+  borderRadius: '10px',
+  height: 'fit-content',
+  backgroundColor: 'background.paper',
+  boxShadow: 24,
+};
+export default function Work() {
+  const [open, setOpen] = useState(false);
+  const [modalContent, setModalContent] = useState<PortfolioDataModel>(PortfolioData[0]);
+  const handleClose = () => setOpen(false);
+  const handleClick = (id: number) => {
+    setOpen(true);
+    const temp = PortfolioData.find(item => item.id === id);
+    temp && setModalContent(temp);
+  }
   useClientDimensions();
   return (
-    <PageWrapper>
-      <Carousel>
-        {
-          PortfolioData.map(item => (
-            <ContentCardWrapper key={item.id} title={item.title} imageSource={item.imageSource}>
-              <PortfolioTextContent workType={item.workType} techStack={item.techStack} description={item.description} />
-            </ContentCardWrapper>
-          ))
-        }
-      </Carousel>
-    </PageWrapper>
+    <div className="flex h-full flex-col pb-12">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          {
+            PortfolioData.map(item => (
+              <PortfolioGalleryCard key={item.id} portfolioItem={item} onClick={id => handleClick(id)} />
+            ))
+          }
+        </div>
+      <Modal open={open}
+             onClose={handleClose}
+             aria-labelledby="modal-modal-title"
+             aria-describedby="modal-modal-description">
+        <Box sx={style}>
+          <ContentCardWrapper title={modalContent.title} imageSource={modalContent.imageSource}>
+            <PortfolioTextContent workType={modalContent.workType} techStack={modalContent.techStack} description={modalContent.description} />
+          </ContentCardWrapper>
+        </Box>
+      </Modal>
+    </div>
   )
 }
