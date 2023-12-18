@@ -10,7 +10,7 @@ export const MainNavigation = () => {
   const path = usePathname();
   const activeClass = "text-rose-600 font-semibold";
   return (
-    <div className="flex items-center justify-evenly md:flex-col md:justify-start gap-4 w-ful md:w-fit h-fit md:gap-8 bg-gray-100">
+    <div className="flex items-center justify-evenly md:flex-col md:justify-start gap-4 w-ful md:w-fit h-fit md:gap-8 bg-gray-100 border-2 border-gray-300 rounded-lg">
       <a className={`cursor-pointer text-gray-700 hover:text-gray-400 flex flex-col md:flex-row items-center md:gap-4 md:w-full p-2 rounded-md ${path === '/' && activeClass}`}
       href={'/'}
       >

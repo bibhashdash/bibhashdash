@@ -17,7 +17,7 @@ export const MainHeader = () => {
         </div>
       </div>
       <div>
-        <img alt="hero image" src="/assets/heroimage.jpg" className="w-20 sm:w-28 md:w-36 rounded-[50%] border-4 border-slate-200"/>
+        <img alt="hero image" src="/assets/heroImage2.jpg" className="w-20 sm:w-28 md:w-36 rounded-[50%] border-4 border-slate-200"/>
       </div>
     </div>
   )

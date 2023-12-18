@@ -7,6 +7,7 @@ import Modal from '@mui/material/Modal';
 import React, {useState} from "react";
 import {PortfolioGalleryCard} from "@/components/PortfolioGalleryCard";
 import Box from '@mui/material/Box';
+import {PageWrapper} from "@/components/PageWrapper";
 
 const style = {
   position: 'absolute' as 'absolute',
@@ -34,10 +35,10 @@ export default function Work() {
   }
   useClientDimensions();
   return (
-    <div className="flex h-full flex-col pb-12">
+    <PageWrapper>
       <div className="flex flex-col items-center justify-start w-full px-4 md:px-12 md:gap-6 h-full">
         <p className="w-full text-lg text-center md:text-left font-bold">My Projects</p>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 w-full">
           {
             PortfolioData.map(item => (
               <PortfolioGalleryCard key={item.id} portfolioItem={item} onClick={id => handleClick(id)} />
@@ -55,6 +56,6 @@ export default function Work() {
           </Box>
         </Modal>
       </div>
-    </div>
+    </PageWrapper>
   )
 }

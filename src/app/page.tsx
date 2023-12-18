@@ -9,11 +9,19 @@ export default function About() {
 
   return (
     <PageWrapper>
-      <ContentCardWrapper title={'"Be Useful"'} imageSource={"/assets/placeholder.jpg"}>
-        <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual
-          form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a
-          placeholder before final copy is available. In publishing and graphic design, Lorem ipsum is a placeholder
-          text commonly used to demonstrate the visual form of a document or a typeface without relying on...</p>
+      <ContentCardWrapper title={'Hello World'} imageSource={"/assets/about1.jpg"}>
+        <p>I am a <b>Junior Software Developer</b> specialising in Front End Web Development. Self-taught owing to the vagaries
+          of time under lockdown, I currently work for <b>Twelve Oaks Software</b> based in York, United Kingdom.</p> <br/>
+        <p>I love bringing ideas and designs to life on the web. My tech stack from professional and personal projects
+          includes, <b>HTML, CSS, Javascript, React, Next JS, Vue JS, Tailwind CSS, .NET MAUI, C#, Kotlin</b>, and even no-code
+          platforms such as <b>Webflow</b>.</p><br/>
+        <p>If you would like a taste of the work I have done please feel free to browse <a className="underline" href={"/work"}><b>my projects</b></a>. Got a question or
+          just want to discuss a project of yours? Drop me <a className="underline" href="mailto:bibhashdash@gmail.com"><b>an
+            email</b></a>.</p>
+        <br/>
+        <p>In a previous professional life I&apos;ve worked as a <b>Sports Journalist</b> (8 years), <b>Asbestos Surveyor</b> (3 years), and as a <b>Project Leader</b> in a charity (1.5 years)</p><br/>
+        <p>When not wrestling <code>div</code> tags, I can be usually found enjoying family life with my wife and two kids in lovely East Yorkshire, and at
+          other times wrestling against a hill on my bike.</p>
       </ContentCardWrapper>
     </PageWrapper>
   )
