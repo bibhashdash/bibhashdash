@@ -5,16 +5,24 @@ export interface PortfolioDataModel {
   techStack: string,
   description: string,
   imageSource: string,
+  projectLink?: string,
+  review?: string,
+  reviewAttribution?: string,
+  reviewerRole?: string,
 }
 
 export const PortfolioData: Array<PortfolioDataModel> = [
   {
     id: 1,
     title: "Vikings Foundation",
-    description: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.",
+    description: "I worked with the Vikings Foundation CIC, a local charitable organisation providing football development in Goole, to create a business-card website. I made the sketches in Figma before coding it up in Next JS. The main goal was a speedy output as the client had their own programme launch deadline to meet. I wanted to keep the design simple and the colour scheme well-contrasted to ensure maximum visibility.",
     techStack: "Next JS, Tailwind, Netlify",
     workType: "Website",
-    imageSource: "/assets/placeholder.jpg"
+    imageSource: "/assets/vikingsProjectDisplay.png",
+    projectLink: "https://www.thevikingsfoundation.org/",
+    review: "So pleased with our website & the way Bibhash listens to what we require & then delivers with expertise & style.",
+    reviewAttribution: "Andy Ullathorne",
+    reviewerRole: "Vikings Foundation",
   },
   {
     id: 2,
@@ -22,7 +30,11 @@ export const PortfolioData: Array<PortfolioDataModel> = [
     description: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.",
     techStack: "Next JS, Tailwind, Netlify",
     workType: "Website",
-    imageSource: "/assets/placeholder.jpg"
+    imageSource: "/assets/nlsProjectDisplay.png",
+    projectLink: "https://newlifesupport.co.uk/",
+    review: "So pleased with our website & the way Bibhash listens to what we require & then delivers with expertise & style.",
+    reviewAttribution: "Liz Green",
+    reviewerRole: "New Life Support"
   },
   {
     id: 3,
@@ -30,54 +42,31 @@ export const PortfolioData: Array<PortfolioDataModel> = [
     description: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.",
     techStack: "Next JS, Tailwind, Netlify",
     workType: "Website",
-    imageSource: "/assets/placeholder.jpg"
+    imageSource: "/assets/perfectProjectDisplay.png",
+    projectLink: "https://www.perfectscoreapp.com/",
+    review: "It's a tad addictive!",
+    reviewerRole: "Game user",
+    reviewAttribution: "Neil Damms",
   },
   {
     id: 4,
-    title: "My Air Quality",
-    description: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.",
-    techStack: "Next JS, Tailwind, Netlify",
-    workType: "Website",
-    imageSource: "/assets/placeholder.jpg"
-  },
-  {
-    id: 5,
-    title: "Social Network",
-    description: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.",
-    techStack: "Next JS, Tailwind, Netlify",
-    workType: "Website",
-    imageSource: "/assets/placeholder.jpg"
-  },
-  {
-    id: 6,
-    title: "Football Game",
-    description: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.",
-    techStack: "Next JS, Tailwind, Netlify",
-    workType: "Website",
-    imageSource: "/assets/placeholder.jpg"
-  },
-  {
-    id: 7,
-    title: "Fleet Management Portal",
-    description: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.",
-    techStack: "Next JS, Tailwind, Netlify",
-    workType: "Website",
-    imageSource: "/assets/placeholder.jpg"
-  },
-  {
-    id: 8,
-    title: "Asset Surveying System",
-    description: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.",
-    techStack: "Next JS, Tailwind, Netlify",
-    workType: "Website",
-    imageSource: "/assets/placeholder.jpg"
-  },
-  {
-    id: 9,
     title: "Phoenix Community Radio",
     description: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.",
     techStack: "Next JS, Tailwind, Netlify",
     workType: "Website",
-    imageSource: "/assets/placeholder.jpg"
+    imageSource: "/assets/phoenixProjectDisplay.png",
+    review: " asd asdk askdjasjk asd asjdasdjsajdas ajsdjasdpasdpasd asdasdpasd[asdsa",
+    reviewAttribution: "Maureen Brown",
+    projectLink: "https://phoenixcommunityradio.com/",
+    reviewerRole: "Chairperson, Phoenix Community Radio",
+  },
+  {
+    id: 5,
+    title: "My Air Quality",
+    description: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.",
+    techStack: "Next JS, Tailwind, Netlify",
+    workType: "Website",
+    imageSource: "/assets/airqualProjectDisplay.png",
+    projectLink: "https://airqualitylevels.netlify.app/",
   },
 ]
