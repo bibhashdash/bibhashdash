@@ -11,3 +11,20 @@
 .h-screen {
   height: var(--vh, 100vh);
 }
+
+.control-dots {
+  position: relative !important;
+  bottom: 0 !important;
+}
+
+.dot {
+  background-color: gray !important;
+}
+
+.dot.selected {
+  background-color: #e11d48 !important;
+}
+
+.control-arrow {
+  opacity: 1 !important;
+}
