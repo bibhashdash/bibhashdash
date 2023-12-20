@@ -1,6 +1,6 @@
 'use client';
 import {useClientDimensions} from "@/utilities/clientDimensions";
-import {PortfolioData} from "@/data/portfolioData";
+import PortfolioData from "@/data/portfolioData";
 import React from "react";
 import {PortfolioGalleryCard} from "@/components/PortfolioGalleryCard";
 import {PageWrapper} from "@/components/PageWrapper";

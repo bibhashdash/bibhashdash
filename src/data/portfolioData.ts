@@ -11,7 +11,7 @@ export interface PortfolioDataModel {
   reviewerRole?: string,
 }
 
-export const PortfolioData: Array<PortfolioDataModel> = [
+const PortfolioData: Array<PortfolioDataModel> = [
   {
     id: 1,
     title: "Vikings Foundation",
@@ -70,3 +70,5 @@ export const PortfolioData: Array<PortfolioDataModel> = [
     projectLink: "https://airqualitylevels.netlify.app/",
   },
 ]
+
+export default PortfolioData;

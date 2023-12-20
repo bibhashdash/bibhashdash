@@ -1,6 +1,6 @@
 'use client';
 
-import {PortfolioData} from "@/data/portfolioData";
+import PortfolioData from "@/data/portfolioData";
 import {useParams} from "next/navigation";
 import {PageWrapper} from "@/components/PageWrapper";
 import React from "react";
