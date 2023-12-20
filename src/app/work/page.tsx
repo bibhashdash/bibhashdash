@@ -17,7 +17,7 @@ export default function Work() {
         <div className="grid grid-cols-2 md:grid-cols-3 gap-6 w-full">
           {
             PortfolioData.map(item =>
-              <PortfolioGalleryCard key={item.id} portfolioItem={item} onClick={id => router.push(`/work/${id}`)} />)
+              <PortfolioGalleryCard key={item.id} portfolioItem={item} onClick={id => router.push(`/work/${id.toString()}`)} />)
           }
         </div>
       </div>
