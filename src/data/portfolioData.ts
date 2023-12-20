@@ -16,7 +16,7 @@ const PortfolioData: Array<PortfolioDataModel> = [
     id: 1,
     title: "Vikings Foundation",
     description: "I worked with The Vikings Foundation CIC, a local charitable organisation providing football development in Goole, to create a business-card website. I made the sketches in Figma before coding it up in Next JS. The main goal was a speedy output as the client had their own programme launch deadline to meet. I wanted to keep the design simple and the colour scheme well-contrasted to ensure maximum visibility.",
-    techStack: "Next JS, Tailwind, Netlify",
+    techStack: "Next JS, Typescript, Tailwind, Netlify",
     workType: "Website",
     imageSource: "/assets/vikingsProjectDisplay.png",
     projectLink: "https://www.thevikingsfoundation.org/",
