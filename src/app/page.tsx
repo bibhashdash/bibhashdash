@@ -9,7 +9,7 @@ export default function About() {
 
   return (
     <PageWrapper>
-      <ContentCardWrapper title={'Hello World'} imageSource={"/assets/about1.jpg"}>
+      <ContentCardWrapper title={'Hello World!'} imageSource={"/assets/about1.jpg"}>
         <div className="py-4">
           <p>I am a <b>Junior Software Developer</b> specialising in Front End Web Development. Self-taught owing to the vagaries
             of time under lockdown, I currently work for <b>Twelve Oaks Software</b> based in York, United Kingdom.</p> <br/>
