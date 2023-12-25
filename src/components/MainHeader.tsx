@@ -11,9 +11,9 @@ export const MainHeader = () => {
           <h2 className="text-sm sm:text-xl">Software Developer</h2>
         </div>
         <div className="flex gap-6">
-          <TwitterIcon />
-          <EmailIcon />
-          <LinkedInIcon />
+          <a href={'https://twitter.com/bibhashdash'} target={"_blank"}><TwitterIcon /></a>
+          <a href="mailto:bibhashdash@gmail.com"><EmailIcon /></a>
+          <a href={'https://www.linkedin.com/in/bibhash-dash-57307921/'} target={"_blank"}><LinkedInIcon /></a>
         </div>
       </div>
       <div>

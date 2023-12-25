@@ -20,14 +20,14 @@ export default function ProjectDetailsPage() {
               <p className="w-full text-lg font-bold">{project.title}</p>
             </div>
             <div className="flex flex-col items-center justify-start w-full lg:grid lg:grid-cols-12 lg:gap-6">
-              <img src={project.imageSource} className="rounded-lg col-span-6" />
+              <img alt="project screenshots" src={project.imageSource} className="rounded-lg col-span-6" />
               <div className="col-span-6">
                 <ProjectQuickInfo portfolioItem={project} />
               </div>
             </div>
             <div className="mt-6 flex flex-col gap-4">
               <p><b>Description:</b> {project.description}</p>
-              <a className="underline w-full text-start font-bold cursor-pointer" href={project.projectLink} target="_blank">Visit Project</a>
+              <a className="w-full text-start font-bold cursor-pointer flex flex-row underline" href={'/work'}><BackIcon /> Back to all projects</a>
             </div>
           </div>
         ) : (
