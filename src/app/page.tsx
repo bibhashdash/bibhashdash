@@ -11,7 +11,7 @@ export default function About() {
     <PageWrapper>
       <ContentCardWrapper title={'Hello World!'} imageSource={"/assets/about1.jpg"}>
         <div className="py-4">
-          <p>I am a <b>Junior Software Developer</b> specialising in Front End Web Development. Self-taught owing to the vagaries
+          <p>I am a <b>Software Developer</b> specialising in Front End Web Development. Self-taught owing to the vagaries
             of time under lockdown, I currently work for <b>Twelve Oaks Software</b> based in York, United Kingdom.</p> <br/>
           <p>I love bringing ideas and designs to life on the web. My tech stack from professional and personal projects
             includes, <b>HTML, CSS, Javascript, React, Next JS, Vue JS, Tailwind CSS, .NET MAUI, C#, Kotlin</b>, and even no-code
