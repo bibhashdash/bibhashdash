@@ -12,7 +12,7 @@ export const MainHeader = () => {
         </div>
         <div className="flex gap-6">
           <a href={'https://twitter.com/bibhashdash'} target={"_blank"}><TwitterIcon /></a>
-          <a href="mailto:bibhashdash@gmail.com"><EmailIcon /></a>
+          <a href="mailto:contact@bibhashdash.com"><EmailIcon /></a>
           <a href={'https://www.linkedin.com/in/bibhash-dash-57307921/'} target={"_blank"}><LinkedInIcon /></a>
         </div>
       </div>
