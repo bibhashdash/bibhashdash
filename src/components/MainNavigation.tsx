@@ -4,6 +4,7 @@ import FaceIcon from '@mui/icons-material/Face';
 import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
 import AltRouteIcon from '@mui/icons-material/AltRoute';
 import {useParams, usePathname} from "next/navigation";
+import {BookIcon} from "@/components/BookIcon";
 
 export const MainNavigation = () => {
 
@@ -30,6 +31,12 @@ export const MainNavigation = () => {
       >
         <AltRouteIcon />
         Career
+      </a>
+      <a className={`cursor-pointer text-gray-700 hover:text-gray-400 flex flex-col md:flex-row items-center md:gap-4 md:w-full p-2 rounded-md ${path === '/blog' && activeClass}`}
+         href={'/blog'}
+      >
+        <BookIcon />
+        Blog
       </a>
     </div>
   )
