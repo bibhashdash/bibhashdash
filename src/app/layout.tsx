@@ -4,7 +4,7 @@ import {Poppins, Playfair_Display} from 'next/font/google'
 import React from "react";
 import {MainHeader} from "@/components/MainHeader";
 import {MainNavigation} from "@/components/MainNavigation";
-import {ConnectEmbed, ThirdwebProvider} from "@/services/thirdweb";
+import {ThirdwebProvider} from "@/services/thirdweb";
 
 const poppins = Poppins(
   {

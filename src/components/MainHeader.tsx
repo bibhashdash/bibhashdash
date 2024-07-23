@@ -2,7 +2,6 @@
 import {TwitterIcon} from "@/icons/TwitterIcon";
 import {EmailIcon} from "@/icons/EmailIcon";
 import {LinkedInIcon} from "@/icons/LinkedInIcon";
-import {CoffeeIcon} from "@/icons/CoffeeIcon";
 import {ConnectEmbed} from "thirdweb/react";
 import {client} from "@/services/thirdwebclient";
 import {chain} from "@/services/chain";
